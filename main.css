@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 0rem 1rem;
+}
+
+#left{
+    /* background-color: red; */
+}
+#left>h2{
+    color: orange;
+    font-size: 1.5rem;
+}
+#cent{
+    /* background-color: aqua; */
+}
+#cent>ul{
+    list-style-type: none;
+    display: flex;
+}
+#cent>ul>li>a{
+    text-decoration: none;
+    color: red;
+    padding: 1rem;
+    display: block;     
+    /* //display block beacuse padding dene pai vertical padding nhi ho raha tha so hum display block likheneg so vertical padding ho */
+}
+#cent>ul>li>a:hover{
+    color: black;
+    background-color: white;
+}
+#right{
+    /* background-color: blueviolet; */
+}
+
+#right button{
+    margin-left: 1rem;
+    padding: 0.65rem;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(81, 81, 187);
+    color: white;
+}
+
+#right button:active{
+    background-color: wheat;
+    color: black;
+}
+
+#right>span{
+    color: white;
+}
+.design{
+    display: grid;
+    grid-template-columns: repeat(3,25%);
+    justify-content: space-between;
+    gap:2rem;
+    padding: 1rem;
+}
+
+.design>div{
+    
+    background-color: bisque;
+    border-radius: 5px;
+}
+
+.design>div>img{
+    width: 100%;
+    height: 10rem;
+    border-radius: 5px;
+}
+
+.design>div>h3{
+   text-align: center;
+    margin-top: 1rem;
+    font-size: 1rem;
+    
+}
+
+.design>div>h2{
+    padding-left: 1rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    
+}
+
+.design>div>button{
+    width: 100%;
+    height: 2rem;
+    border: none;
+    border-radius:5px;
+    background-color: rgb(81, 81, 187);
+    color: white;
+    margin-top: 1rem;
+
+}
+
+.design>div>button:active{
+    background-color: red;
+    color: black;
+}
+
+#search{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+#search>input{
+    padding: 0.5rem;
+}
+
+#search>button{
+    border: none;
+    border-radius:5px;
+    background-color: rgb(81, 81, 187);
+    color: white;
+    margin-top: 1rem;
+    padding: 0.8rem;
+    margin-left: 1rem;
+
+}
+
+#search>button:active{
+    background-color: sandybrown;
+    color: black;
+}
+
+#cart-cont{
+    position: relative;
+}
+
+.fa-cart-shopping{
+    color: white;
+}
+
+#count{
+    color: red;
+    font-size: 0.5rem;
+    position: absolute;
+    top: -40%;
+    right: 0%;
+}
